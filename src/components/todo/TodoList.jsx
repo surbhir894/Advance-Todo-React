@@ -28,7 +28,7 @@ function TodoList() {
                         <button data-tooltip-id="button-delete-id">
                             <PiX />
                         </button>
-                    </div>-
+                    </div>
                 </li>
                 
                 <li>
