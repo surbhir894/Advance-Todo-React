@@ -17,6 +17,25 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1;
 }
 
+.btn{
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn.btn-disabled{
+    pointer-events: none;
+    filter: grayscale( 100%);
+    opacity: 0.5;
+}
+.btn-primary{
+    background: #0078AA;
+    color: #fff;
+}
+.btn-error{
+    background: red;
+}
+
 /* Todo App css  */
 .todo-app{
     background: #fff;
@@ -76,4 +95,32 @@ h1{
 }
 li:hover{
     background: rgb(237, 237, 246);
+}
+.todo-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-form{
+    .field-group{
+        margin-bottom: 15px;
+     }
+     label{
+        margin-bottom: 2px;
+     }
+    input,
+    textarea{
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        width: 100%;
+
+    }
+   
+}
+.delete-modal-buttons,
+.todo-form-actions{
+   float: right; 
+   display: flex;
+   gap: 10px;
 }
